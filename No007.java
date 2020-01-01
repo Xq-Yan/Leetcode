@@ -26,7 +26,7 @@ class Solution {
             a = x % 10;
             if (res > Integer.MAX_VALUE / 10 || ((Integer.MAX_VALUE / 10) == res && Integer.MAX_VALUE % 10 < a))
                 return 0;
-            if (res < Integer.MIN_VALUE / 10 || ((Integer.MAX_VALUE / 10) == res && Integer.MIN_VALUE % 10 > a))
+            if (res < Integer.MIN_VALUE / 10 || ((Integer.MIN_VALUE / 10) == res && Integer.MIN_VALUE % 10 > a))
                 return 0;
             res = res * 10 + a;
             x = x / 10;
